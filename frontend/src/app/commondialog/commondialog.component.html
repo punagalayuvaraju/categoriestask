@@ -1,0 +1,16 @@
+<div class="container">
+    <p class="heading">Total number Of Products : {{products?.length}}</p>
+    <table class="table" *ngIf="products" style="max-height: 300px;text-align: center;">
+        <tr>
+            <th>S.No</th>
+            <th>Products</th>
+        </tr>
+        <tr *ngFor="let i of products;let index=index" >
+            <td>{{index+1}}</td>
+            <td>{{i?.productname}}</td>
+        </tr>
+    </table>
+    <div style="text-align: center;">
+        <button mat-raised-button [mat-dialog-close]="null">Close</button>
+    </div>
+</div>

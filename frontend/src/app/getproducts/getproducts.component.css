@@ -1,0 +1,15 @@
+.heading{
+    text-align: center;
+    padding: 35px;
+    font-size: 25px;
+}
+.icnend{
+float: right;
+cursor: pointer;
+}
+.respo{
+    height: 97px;
+    padding-top: 35px;
+    display: flex;
+    justify-content: space-around;
+}

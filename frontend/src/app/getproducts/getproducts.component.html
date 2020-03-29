@@ -1,0 +1,18 @@
+<div class="respo">
+    <span style="font-size: xx-large;">List Of Categories</span>
+    <span (click)="logout($event)" class="icnend"><mat-icon>input</mat-icon></span>
+</div>
+<div class="container">
+    <table class="table" *ngIf="categories">
+        <tr>
+            <th>S.No</th>
+            <th>Categories</th>
+            <th>Products</th>
+        </tr>
+        <tr *ngFor="let i of categories;let index=index">
+            <td>{{index+1}}</td>
+            <td>{{i?.category}}</td>
+            <td><button type="button" mat-raised-button (click)="getCount(i)">View Products</button></td>
+        </tr>
+    </table>
+</div>
